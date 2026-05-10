@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+.hero {
+    background: #9f1d26;
+    color: white;
+    padding: 30px 45px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-right: 0;
+    border-bottom: 60px solid #f3f3f3;
+}
+
+.logo , .logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+.hero p {
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.section {
+    padding: 25px 25px 0px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+img {
+    width: 20px;
+}
+
+.title h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+}
+
+.clubs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.club {
+    width: 60px;
+    text-align: center;
+}
+
+.club img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.club h4 {
+    color: #9f1d26;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.club p {
+    font-size: 10px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+}
+
+.footer {
+    background: #9f1d26;
+    color: #fff;
+    padding: 55px 45px 65px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-right: 0;
+    border-bottom: 60px solid #f3f3f3;
+}
+
+.footer h2 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.15;
+    max-width: 320px;
+}
