@@ -16,33 +16,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 12px 30px; /* Reduced from 20px 60px */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px; /* Reduced from 10px */
     color: #009999;
-    font-size: 38px;
+    font-size: 24px; /* Reduced from 38px */
     font-weight: 500;
 }
 
 .logo i {
-    font-size: 42px;
+    font-size: 26px; /* Reduced from 42px */
 }
 
 .nav-links {
     display: flex;
-    gap: 50px;
+    gap: 25px; /* Reduced from 50px */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #666;
-    font-size: 20px;
-    padding-bottom: 8px;
+    font-size: 15px; /* Reduced from 20px */
+    padding-bottom: 4px; /* Reduced from 8px */
 }
 
 .nav-links .photo:hover {
@@ -67,7 +67,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 250px;
+    height: 180px; /* Reduced from 250px */
     background: url('86a22117-df9a-40c1-aab9-4306f99174dd.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -77,8 +77,8 @@ body {
 /* Search Box */
 .search-box {
     display: flex;
-    width: 700px;
-    height: 75px;
+    width: 500px; /* Reduced from 700px */
+    height: 48px; /* Reduced from 75px */
     background: white;
     overflow: hidden;
 }
@@ -87,17 +87,17 @@ body {
     flex: 1;
     border: none;
     outline: none;
-    padding: 0 25px;
-    font-size: 32px;
+    padding: 0 15px; /* Reduced from 25px */
+    font-size: 16px; /* Reduced from 32px */
     color: #008b8b;
 }
 
 .search-box button {
-    width: 150px;
+    width: 100px; /* Reduced from 150px */
     border: none;
     background: #009999;
     color: white;
-    font-size: 32px;
+    font-size: 16px; /* Reduced from 32px */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -106,18 +106,17 @@ body {
     background: #007777;
 }
 
-
 h2 {
     color: #008c8c;
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 20px; /* Reduced from 30px */
+    font-size: 22px; /* Reduced from 30px */
 }
 
 /* GRID */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Balanced baseline grid size */
+    gap: 20px; /* Reduced from 30px */
 }
 
 /* CARD */
@@ -150,8 +149,8 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    width: 90%;
-    height: 50%;
+    width: 85%; /* Reduced from 90% */
+    height: 45%; /* Reduced from 50% */
     border: 2px solid white;
     display: flex;
     justify-content: center;
@@ -163,9 +162,10 @@ h2 {
 
 .overlay h2 {
     color: white;
-    font-size: 45px;
+    font-size: 24px; /* Reduced from 45px */
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 1px; /* Reduced from 2px */
+    margin-bottom: 0; /* Clears baseline global h2 margin */
 }
 
 /* HOVER EFFECT */
@@ -186,17 +186,17 @@ h2 {
 .info {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 10px; /* Reduced from 15px */
     color: #9b9b9b;
-    font-size: 22px;
+    font-size: 14px; /* Reduced from 22px */
 }
 
 /* ================= PAGINATION ================= */
 
 .pagination-section {
     width: 100%;
-    height: 350px;
-    padding: 80px 40px;
+    height: auto; /* Changed from 350px fixed to let elements breathe safely */
+    padding: 40px 20px; /* Reduced from 80px 40px */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,10 +205,10 @@ h2 {
 .page-btn {
     background: #009999;
     color: white;
-    padding: 20px 50px;
+    padding: 10px 25px; /* Reduced from 20px 50px */
     text-decoration: none;
-    font-size: 20px;
-    border-radius: 8px;
+    font-size: 14px; /* Reduced from 20px */
+    border-radius: 4px; /* Reduced from 8px */
     transition: 0.3s;
 }
 
@@ -222,20 +222,20 @@ h2 {
 
 .page-numbers {
     display: flex;
-    gap: 20px;
+    gap: 10px; /* Reduced from 20px */
 }
 
 .page-number {
-    width: 90px;
-    height: 90px;
+    width: 40px; /* Reduced from 90px */
+    height: 40px; /* Reduced from 90px */
     display: flex;
     justify-content: center;
     align-items: center;
     background: #e5e5e5;
     color: #888;
     text-decoration: none;
-    font-size: 20px;
-    border-radius: 8px;
+    font-size: 14px; /* Reduced from 20px */
+    border-radius: 4px; /* Reduced from 8px */
     transition: 0.3s;
 }
 
@@ -244,19 +244,18 @@ h2 {
     color: white;
 }
 
-
+/* Footer Section */
 footer {
     background: #e4e4e4;
-    padding: 70px 100px;
+    padding: 40px 50px; /* Reduced from 70px 100px */
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px; /* Reduced from 50px */
 }
-
 
 .footer-about {
     width: 35%;
@@ -264,14 +263,14 @@ footer {
 
 .footer-about h2 {
     color: #009999;
-    font-size: 28px;
-    margin-bottom: 35px;
+    font-size: 18px; /* Reduced from 28px */
+    margin-bottom: 15px; /* Reduced from 35px */
 }
 
 .footer-about p {
     color: #8c8c8c;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px; /* Reduced from 20px */
+    line-height: 22px; /* Reduced from 28px */
 }
 
 .footer-about a {
@@ -281,8 +280,8 @@ footer {
 
 .footer-links h2 {
     color: #009999;
-    font-size: 28px;
-    margin-bottom: 35px;
+    font-size: 18px; /* Reduced from 28px */
+    margin-bottom: 15px; /* Reduced from 35px */
 }
 
 .footer-links ul {
@@ -290,13 +289,13 @@ footer {
 }
 
 .footer-links ul li {
-    margin-bottom: 15px;
+    margin-bottom: 8px; /* Reduced from 15px */
 }
 
 .footer-links ul li a {
     text-decoration: none;
     color: #8c8c8c;
-    font-size: 20px;
+    font-size: 14px; /* Reduced from 20px */
     transition: 0.3s;
 }
 
@@ -304,22 +303,21 @@ footer {
     color: #009999;
 }
 
-
 .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 12px; /* Reduced from 20px */
 }
 
 .social-icons a {
-    width: 65px;
-    height: 65px;
+    width: 40px; /* Reduced from 65px */
+    height: 40px; /* Reduced from 65px */
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #8c8c8c;
-    font-size: 28px;
+    font-size: 18px; /* Reduced from 28px */
     transition: 0.3s;
 }
 
@@ -329,15 +327,15 @@ footer {
 }
 
 .footer-policy {
-    margin-top: 40px;
+    margin-top: 20px; /* Reduced from 40px */
 }
 
 .footer-policy a {
     display: block;
     color: #8c8c8c;
     text-decoration: none;
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: 14px; /* Reduced from 20px */
+    margin-bottom: 12px; /* Reduced from 25px */
 }
 
 .footer-policy a:hover {
@@ -350,7 +348,7 @@ footer {
 
     .pagination-section {
         flex-direction: column;
-        gap: 40px;
+        gap: 20px; /* Reduced from 40px */
     }
 
     .footer-container {
@@ -362,6 +360,6 @@ footer {
     }
 
     .footer-social {
-        gap: 40px;
+        gap: 20px; /* Reduced from 40px */
     }
 }
