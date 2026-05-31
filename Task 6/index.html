@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Gallery - Photography Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">WINTER<span>PORTFOLIO</span></a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-list">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Winter Wonder</h1>
+      <p class="hero-desc">Photography & Travel Portfolio Collection</p>
+      <a href="#gallery" class="btn-winter">Discover Gallery</a>
+    </div>
+  </header>
+
+  <!-- ASYMMETRICAL GALLERY SECTION -->
+  <section id="gallery" class="section-padding gallery-bg">
+    <div class="container">
+      <h2 class="section-title">Winter Images</h2>
+      <p class="section-subtitle">Extraordinary Holidays Showcase</p>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Landscapes</button>
+        <button class="filter-btn">Decorations</button>
+        <button class="filter-btn">Food</button>
+        <button class="filter-btn">Family</button>
+      </div>
+
+      <!-- Asymmetric Grid Architecture Grid (image_956566.jpg) -->
+      <div class="gallery-grid">
+
+        <!-- Tile 1: Stockings on Tree (Col 1) -->
+        <div class="gallery-item item-tall-1">
+          <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600"
+            alt="Christmas stockings decoration">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Holiday Spirit</h4>
+            <span class="overlay-category">Decorations</span>
+          </div>
+        </div>
+
+        <!-- Tile 2: Pastels Panel (Col 2) -->
+        <div class="gallery-item item-tall-2">
+          <img src="https://images.unsplash.com/photo-1513553404607-988bf2703777?q=80&w=600"
+            alt="Pastel background confectionery sweets">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Sweet Confections</h4>
+            <span class="overlay-category">Food</span>
+          </div>
+        </div>
+
+        <!-- Tile 3: Woods Evening Campfire (Col 3) -->
+        <div class="gallery-item item-extra-tall">
+          <img src="https://images.unsplash.com/photo-1485594050903-8e8ee7b071a8?q=80&w=600"
+            alt="Outdoor forest evening campfire group gathering">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Evening Gathering</h4>
+            <span class="overlay-category">Family</span>
+          </div>
+        </div>
+
+        <!-- Tile 4: Classroom Study (Col 1) -->
+        <div class="gallery-item item-short-1">
+          <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?q=80&w=600" alt="Classroom study session">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Learning Moments</h4>
+            <span class="overlay-category">Family</span>
+          </div>
+        </div>
+
+        <!-- Tile 5: Gift Wrapping Holding Box (Col 2 - Always Visible As Image Asset) -->
+        <div class="gallery-item item-short-2 has-overlay">
+          <img src="https://images.unsplash.com/photo-1511268559489-34b624fbfcf5?q=80&w=600"
+            alt="Hands offering gift wrapped parcel">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Gift Wrapping</h4>
+            <span class="overlay-category">Decorations</span>
+          </div>
+        </div>
+
+        <!-- Tile 6: Autumn Roadway (Col 1) -->
+        <div class="gallery-item item-bottom-1">
+          <img src="https://images.unsplash.com/photo-1547989453-11e67ffb3885?q=80&w=600"
+            alt="Forest roadway split perspective">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Autumn Trails</h4>
+            <span class="overlay-category">Landscapes</span>
+          </div>
+        </div>
+
+        <!-- Tile 7: Stacked Donuts Plate (Col 2) -->
+        <div class="gallery-item item-bottom-2">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600"
+            alt="Stacked fresh confections plate layout">
+          <div class="item-overlay">
+            <h4 class="overlay-title">Cozy Morning Treat</h4>
+            <span class="overlay-category">Food</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-padding about-bg">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-subtitle">The Story Behind the Lens</p>
+
+      <div class="about-grid">
+        <div class="about-left-text">
+          <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph
+            tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during
+            the coldest months.</p>
+          <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter
+            warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the
+            fleeting magic of winter.</p>
+          <p>My photography has been featured in various publications and exhibitions, and I continue to explore new
+            ways to capture the essence of winter's wonder.</p>
+        </div>
+
+        <div class="about-right-media">
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600"
+              alt="Artistic Media Asset">
+          </div>
+          <div class="about-stats-row">
+            <div class="stat-card">
+              <div class="stat-value">10+</div>
+              <div class="stat-desc">Years<br>Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">500+</div>
+              <div class="stat-desc">Photos<br>Captured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET IN TOUCH SECTION -->
+  <section id="contact" class="section-padding contact-bg">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Let's work together to capture your winter moments</p>
+
+      <div class="form-wrapper">
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <div class="info-strip">
+          <div class="info-item">📧 <span>hello@winterportfolio.com</span></div>
+          <div class="info-item">📱 <span>+1 (555) 123-4567</span></div>
+          <div class="info-item">📍 <span>Colorado, USA</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Winter Portfolio · Designed by Tooplate</p>
+    </div>
+  </footer>
+
+  <!-- RESPONSIVE NAV ENGINE SCRIPT -->
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      const lines = menuToggle.children;
+      if (navMenu.classList.contains('active')) {
+        lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        lines[1].style.opacity = '0';
+        lines[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        lines[0].style.transform = 'none';
+        lines[1].style.opacity = '1';
+        lines[2].style.transform = 'none';
+      }
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const lines = menuToggle.children;
+        lines[0].style.transform = 'none';
+        lines[1].style.opacity = '1';
+        lines[2].style.transform = 'none';
+
+        document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
