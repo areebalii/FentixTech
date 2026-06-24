@@ -1,0 +1,117 @@
+    /* Custom Variables & Smooth Scroll */
+    :root {
+      --primary-color: #4f46e5;
+      --secondary-color: #06b6d4;
+      --dark-bg: #0f172a;
+      --light-bg: #f8fafc;
+      --transition-speed: 0.3s;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+
+    /* Dark Mode styles triggered by JS */
+    body.dark-mode {
+      background-color: var(--dark-bg);
+      color: #f1f5f9;
+    }
+
+    body.dark-mode .card {
+      background-color: #1e293b;
+      color: #f1f5f9;
+      border-color: #334155;
+    }
+
+    body.dark-mode .navbar {
+      background-color: rgba(15, 23, 42, 0.95) !important;
+    }
+
+    /* Custom Hero Animations */
+    .hero-section {
+      padding: 150px 0 100px 0;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(6, 182, 212, 0.1));
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Hover Effects */
+    .project-card {
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-badge {
+      transition: all var(--transition-speed);
+      cursor: default;
+    }
+
+    .skill-badge:hover {
+      background-color: var(--primary-color) !important;
+      color: white !important;
+      transform: scale(1.1);
+    }
+
+    /* Section Spacing */
+    section {
+      padding: 80px 0;
+    }
+/* --- DARK MODE FIXES --- */
+
+/* 1. Fix Navbar Text & Brand Visibility */
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .nav-link {
+    color: #f1f5f9 !important; /* Forces text to off-white */
+}
+
+/* Navbar link hover state in dark mode */
+body.dark-mode .navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Fix mobile hamburger icon color so it's visible on dark backgrounds */
+body.dark-mode .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* 2. Fix Projects & Alternating Sections */
+/* Adjusts the light-grey alternating section background to a clean dark slate */
+body.dark-mode section.bg-secondary {
+    background-color: rgba(30, 41, 59, 0.4) !important; 
+}
+
+/* Fix Bootstrap's .text-muted inside cards so descriptions are actually readable */
+body.dark-mode .card .text-muted {
+    color: #94a3b8 !important; /* Lighter slate-grey for high contrast */
+}
+
+/* Ensure project card titles stay sharp */
+body.dark-mode .card-title {
+    color: #ffffff;
+}
