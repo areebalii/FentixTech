@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">FURNITURE<span>GALLERY</span></div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products...">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    <div class="cart">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p>Welcome to our</p>
+      <h1>FURNITURE GALLERY</h1>
+      <button class="btn-primary">Shop Now</button>
+    </div>
+  </header>
+
+  <section class="featured-products">
+    <h2>FEATURED PRODUCTS</h2>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="chair">Chair</button>
+      <button class="filter-btn" data-category="sofa">Sofa</button>
+      <button class="filter-btn" data-category="light">Hanging Light</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>CUSTOMER SERVICE</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shipping Info</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>COMPANY</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>SOCIAL</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Furniture Gallery. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
